@@ -9,7 +9,7 @@ import noresult from '../assets/images/noresult.png'
 import { baseUrl, fetchApi} from '../utils/fetchApi'
 
 
-const search = ({ properties }) => {
+const Search = ({ properties }) => {
     // console.log(properties)
     const [searchFilters, setSearchFilter] = useState(false)
     const router = useRouter()
@@ -40,7 +40,7 @@ const search = ({ properties }) => {
     )
 }
 
-export default search
+export default Search
 
 export async function getServerSideProps({ query }) {
     const purpose = query.purpose || 'for-rent';
