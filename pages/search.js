@@ -40,7 +40,7 @@ const Search = ({ properties }) => {
     )
 }
 
-export default Search
+
 
 export async function getServerSideProps({ query }) {
     const purpose = query.purpose || 'for-rent';
@@ -61,3 +61,5 @@ export async function getServerSideProps({ query }) {
         }
     }
 }
+
+export default Search
